@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eindopdracht Advanced JavaScript</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script defer type="text/javascript" src="movies.js"></script>
+    <script defer type="text/javascript" src="main.js"></script>
+  </head>
+
+  <body>
+    <nav>
+      <p>Movie finder</p>
+      <div class="radio-buttons">
+        <input type="radio" id="newest-movies" name="filter" value="newest" class="newest" />
+        <label for="newest-movies">2014 and newer</label>
+
+        <input
+          type="radio"
+          id="avengers-movies"
+          name="filter"
+          value="avengers"
+        />
+        <label for="avengers-movies">Avengers</label>
+
+        <input type="radio" id="x-men-movies" name="filter" value="xmen" />
+        <label for="x-men-movies">X-Men</label>
+
+        <input
+          type="radio"
+          id="princess-movies"
+          name="filter"
+          value="princess"
+        />
+        <label for="princess-movies">Princess</label>
+
+        <input type="radio" id="batman-movies" name="filter" value="batman" />
+        <label for="batman-movies">Batman</label>
+      </div>
+      <br />
+    </nav>
+    <main>
+      <div class="movie-container">
+        <h1>List of filtered Movies</h1>
+        <ul id="movie-list"></ul>
+      </div>
+    </main>
+  </body>
+</html>
